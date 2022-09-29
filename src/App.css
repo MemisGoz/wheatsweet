@@ -1,35 +1,110 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.header-container{
-  background-color: black;
-  padding: 1.5em;
+.container {
+  background-image: url('https://res.cloudinary.com/dh4iesekp/image/upload/v1664485870/weather_hal3hg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  box-shadow: inset 0px 0px 0 2000px rgba(0, 0, 0, 0.5);
 }
-h1{
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0px 0px 0 2000px rgba(0, 0, 0, 0.765);
+  padding: 0.5em;
+}
+
+h4 {
+  color: whitesmoke;
+}
+
+h1 {
   text-align: center;
   color: beige;
 }
-h2{
-  text-align: center;
-}
+
 /*hero*/
-.hero-container{
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
-.hero-container > h1{
-  color: black;
+
+.hero-container>h1 {
+  color: white;
+  font-size: 78px;
 }
-h3{
+
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5em;
+  font-size: 50px;
+}
+
+h3 {
   margin-top: 1em;
+  color: white;
 }
-.img-hero{
-  position:absolute;
+
+.img-hero {
+  position: absolute;
   z-index: -1000;
-  width: 100vw ;
+  width: 100vw;
   height: 100vh;
+}
+
+input {
+  width: 600px;
+  height: 50px;
+  border-radius: 6px;
+
+}
+
+input[type="search"]::placeholder {
+  padding-left: 4px;
+}
+
+input[type="search"] {
+
+  padding: 20px 20px;
+}
+
+/*info section*/
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  box-shadow: inset 0px 0px 0 2000px rgba(255, 255, 255, 0.309);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.info-container>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 0 2000px rgba(255, 255, 255, 0.721);
+  border-radius: 5px;
+  min-height: 200px;
+  min-width: 300px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.info-container>div h3 {
+  color: black;
+  font-size: 28px;
+}
+
+.info-container>div h4 {
+  color: black;
 }
