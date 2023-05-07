@@ -29,7 +29,7 @@ h1 {
 
 /*hero*/
 .hero-container {
-  padding-top: 3rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,7 @@ h3 {
 }
 
 input {
-  width: 600px;
+  width: 50%;
   height: 50px;
   border-radius: 6px;
 
@@ -93,10 +93,9 @@ input[type="search"] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0px 0px 0 2000px rgba(177, 174, 174, 0.155);
   border-radius: 5px;
-  min-height: 200px;
-  min-width: 300px;
+  max-height: 120px;
+  max-width: 300px;
   margin-bottom: 2em;
   margin-top: 2em;
 }
@@ -108,4 +107,27 @@ input[type="search"] {
 
 .info-container>div h4 {
   color: rgb(211, 211, 211);
+}
+
+.icon-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*media query mobile*/
+@media (max-width: 768px) {
+  .hero-container>h1 {
+    font-size: 38px;
+  }
+
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    box-shadow: inset 0px 0px 0 2000px rgba(31, 31, 31, 0.309);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  
+  }
 }

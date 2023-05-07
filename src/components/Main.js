@@ -19,8 +19,8 @@ function Main() {
       );
       setWeatherData(response.data);
       setError(null);
-    } catch (err) {
-      setError(err.message);
+    } catch {
+      setError(alert("City or Country not found"));
     }
   };
 
@@ -30,16 +30,15 @@ function Main() {
 
   return (
     <div className='overlay'>
-      {error && <div>{error}</div>}
-      {weatherData && (
         <div className='container'> 
+        {weatherData && (
+            <div>
           <div className='header-container'>
             <h4>Sweet Weather</h4>
             <h4>Made By Memis Gøz</h4>
           </div>
           <div className='hero-container'>
             <h1>{weatherData.name}</h1>
-            <h3>{weatherData.weather[0].description}</h3>
             <h2>{weatherData.main.temp.toFixed(0)}°</h2>
             <input
               type="text"
@@ -47,6 +46,10 @@ function Main() {
               onChange={(e) => setQuery(e.target.value)}
               onKeyPress={handleKeyPress}
             />
+            <div className="icon-text">
+            <h3>{weatherData.weather[0].description} </h3>
+            <img src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="weather icon" />
+            </div>
           </div>
           <div className='info-container'>
             <div>
@@ -62,8 +65,10 @@ function Main() {
               <h3>{weatherData.main.feels_like.toFixed(0)}°</h3>
             </div>
           </div>
+          </div>
+          )}
         </div>
-      )}
+      
     </div>
   );
 }
