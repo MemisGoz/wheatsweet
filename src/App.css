@@ -4,7 +4,7 @@
 }
 
 .container {
-  background-image: url('https://res.cloudinary.com/dh4iesekp/image/upload/v1664485870/weather_hal3hg.png');
+  background-image: url('https://res.cloudinary.com/dh4iesekp/image/upload/v1683494668/javier-miranda-AlJ9TQqeCV0-unsplash_aww9i1.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -29,6 +29,7 @@ h1 {
 
 /*hero*/
 .hero-container {
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +81,7 @@ input[type="search"] {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  box-shadow: inset 0px 0px 0 2000px rgba(255, 255, 255, 0.309);
+  box-shadow: inset 0px 0px 0 2000px rgba(31, 31, 31, 0.309);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -92,7 +93,7 @@ input[type="search"] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0px 0px 0 2000px rgba(255, 255, 255, 0.721);
+  box-shadow: inset 0px 0px 0 2000px rgba(64, 63, 63, 0.721);
   border-radius: 5px;
   min-height: 200px;
   min-width: 300px;
@@ -101,10 +102,10 @@ input[type="search"] {
 }
 
 .info-container>div h3 {
-  color: black;
+  color: rgb(216, 216, 216);
   font-size: 28px;
 }
 
 .info-container>div h4 {
-  color: black;
+  color: rgb(211, 211, 211);
 }
