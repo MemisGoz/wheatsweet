@@ -42,7 +42,7 @@ function Main() {
             <h2>{weatherData.main.temp.toFixed(0)}°</h2>
             <input
               type="text"
-              
+              placeholder='Search for a country or city...'
               onChange={(e) => setQuery(e.target.value)}
               onKeyPress={handleKeyPress}
             />
